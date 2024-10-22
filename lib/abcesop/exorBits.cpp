@@ -292,7 +292,7 @@ int GetDistancePlus( Cube * pC1, Cube * pC2 )
         {
             Temp = (LastNonZeroWord>>2);
             for ( i = 0; Temp; Temp>>=2, i++ );
-            s_DiffVarNum = LastNonZeroWordNum*BPI/2 + i;
+            s_DiffVarNum = LastNonZeroWordNum*BPII/2 + i;
 
             // save the old var value
             s_DiffVarValueP_old = GetVar( pC1, s_DiffVarNum );
